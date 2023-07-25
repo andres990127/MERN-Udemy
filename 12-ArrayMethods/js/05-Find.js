@@ -1,5 +1,3 @@
-const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio'];
-
 const carrito = [
     { nombre: 'Monitor 27 Pulgadas', precio: 500 },
     { nombre: 'Televisión', precio: 100 },
@@ -8,3 +6,8 @@ const carrito = [
     { nombre: 'Teclado', precio: 400 },
     { nombre: 'Celular', precio: 700 },
 ]
+
+const resultado = carrito.find( producto => {
+    return producto.nombre = 'Tablet';
+})
+console.log(resultado); // Retorna el primer objeto que coincida con la búsqueda
